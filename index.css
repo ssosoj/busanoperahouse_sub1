@@ -1,0 +1,805 @@
+*{margin:0; padding:0;}
+a{color: #000; text-decoration: none;}
+ul{list-style: none;}
+
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 100;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Thin.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 200;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraLight.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Light.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Regular.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Medium.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 600;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-SemiBold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Bold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 800;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-ExtraBold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 900;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.ttf') format("truetype");
+  font-display: swap;
+}
+
+body{
+  font-family: 'SUIT';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #000;
+}
+
+
+/* 메뉴 */
+#gnb{
+  width: 100%;
+  height: 125px;
+  background-color: #f1f2f2;
+}
+.gnb_inner{
+  width: 1320px;
+  margin: auto;
+}
+.gnb_inner li a{
+  font-size: 25px;
+  font-weight: 700;
+}
+.gnb1 li{
+  float: left;
+  margin-top: 55px;
+  padding-right: 40px;
+}
+.gnb2{
+  position: relative;
+}
+.gnb2 li{
+  float: left;
+  margin-top: 55px;
+  padding-left: 22px;
+}
+#sub_logo{
+  margin-top: 20px;
+  margin-left: 72px;
+}
+#small{
+  font-size: 20px;
+}
+
+/* 메뉴 검색 */
+.search-wrapper {
+  position: absolute;
+  /* transform: translate(-100%, 0); */
+  top: 45px;
+  right: -40px;
+}
+.search-wrapper .input-holder {    
+  width:50px;
+  height:50px;
+  overflow: hidden;
+
+  border-radius: 10px;
+  
+  position: relative;
+}
+.search-wrapper.active .input-holder {
+  width:500px;
+  background: #f1f2f2;
+}
+.search-wrapper .input-holder .search-input {
+  width:100%;
+  height: 50px;
+  padding:0px 70px 0 20px;
+
+  opacity: 0;
+
+  position: absolute;
+  top:0px;
+  left:0px;
+  
+  background: transparent;
+  box-sizing: border-box;
+
+  border: 0;
+  outline:none;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color:#42444e;
+}
+.search-wrapper.active .input-holder .search-input {
+  opacity: 1;
+  transform: translate(0, 10px);
+
+  border-bottom: 3px solid #42444e;
+}
+.search-wrapper .input-holder .search-icon {
+  width:50px;
+  height:50px;
+  border:none;
+  border-radius:6px;
+  background: #f1f2f200;
+  padding:0px;
+  outline:none;
+  position: relative;
+  z-index: 2;
+  float:right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search-wrapper .close {
+  position: absolute;
+  z-index: 1;
+  top:10px;
+  right:20px;
+  width:25px;
+  height:25px;
+
+  cursor: pointer;
+
+  display: none;
+}
+.search-wrapper.active .close {
+  right:-50px;
+  transform: rotate(45deg);
+  display: block;
+}
+.search-wrapper .close::before, .search-wrapper .close::after {
+  position:absolute;
+  content:'';
+  background: #f37021;
+  border-radius: 2px;
+}
+.search-wrapper .close::before {
+  width: 5px;
+  height: 25px;
+  left: 10px;
+  top: 0px;
+}
+.search-wrapper .close::after {
+  width: 25px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+
+/* 상단 고정 */
+.scroll-fixed{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+.gnb_top{
+  width: 100%;
+  background-color: #42444e;
+
+  display: none;
+
+  z-index: 99;
+}
+.gnb_top_inner{
+  width: 1320px;
+  margin: 10px auto;
+}
+.gnb_top_inner li a{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 48px;
+
+  color: #f1f2f2;
+}
+.gnb1_top li{
+  float: left;
+  padding-right: 50px;
+}
+.gnb2_top{
+  position: relative;
+}
+.gnb2_top li{
+  float: left;
+}
+.gnb2_top li:nth-child(2), .gnb2_top li:nth-child(3){
+  padding-left: 50px;
+}
+.gnb2_top li:nth-child(4), .gnb2_top li:nth-child(5), .gnb2_top li:nth-child(6){
+  padding-left: 22px;
+}
+#small_top{
+  font-size: 20px;
+}
+#logo_top{
+  margin-left: 120px;
+}
+.on{
+  display: block;
+}
+
+
+/* 상단고정 메뉴 검색 */
+.search-wrapper_top {
+  position: absolute;
+  top: -8px;
+  right: -40px;
+}
+.search-wrapper_top .input-holder_top {    
+  width:50px;
+  height:50px;
+  overflow: hidden;
+
+  border-radius: 10px;
+  
+  position: relative;
+}
+.search-wrapper_top.active .input-holder_top {
+  width:510px;
+  background: #42444e;
+}
+.search-wrapper_top .input-holder_top .search-input_top {
+  width:100%;
+  height: 50px;
+  padding:0px 70px 0 20px;
+
+  opacity: 0;
+
+  position: absolute;
+  top:0px;
+  left:0px;
+  
+  background: transparent;
+  box-sizing: border-box;
+
+  border: 0;
+  outline:none;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color:#f1f2f2;
+}
+.search-wrapper_top.active .input-holder_top .search-input_top {
+  opacity: 1;
+  transform: translate(0, 10px);
+
+  border-bottom: 3px solid #f1f2f2;
+
+}
+.search-wrapper_top .input-holder_top .search-icon_top {
+  width:50px;
+  height:50px;
+  border:none;
+  border-radius:6px;
+  background: #42444e00;
+  padding:0px;
+  outline:none;
+  position: relative;
+  z-index: 2;
+  float:right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search-wrapper_top .close_top {
+  position: absolute;
+  z-index: 1;
+  top:10px;
+  right:20px;
+  width:25px;
+  height:25px;
+
+  cursor: pointer;
+
+  display: none;
+}
+.search-wrapper_top.active .close_top {
+  right:-50px;
+  transform: rotate(45deg);
+  display: block;
+}
+.search-wrapper_top .close_top::before, .search-wrapper_top .close_top::after {
+  position:absolute;
+  content:'';
+  background: #f37021;
+  border-radius: 2px;
+}
+.search-wrapper_top .close_top::before {
+  width: 5px;
+  height: 25px;
+  left: 10px;
+  top: 0px;
+}
+.search-wrapper_top .close_top::after {
+  width: 25px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+
+
+/* 배너 */
+#banner{
+  width: 100%;
+  height: 375px;
+  background: url(images/one_banner.jpg) no-repeat center top;
+}
+#banner > h1{
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+
+  padding-top: 169px;
+  color: #f1f2f2;
+}
+
+
+/* 작은 메뉴 */
+#nav{
+  height: 60px;
+  background-color: #42444e;
+}
+.nav_inner{
+  width: 1320px;
+  margin: auto;
+}
+.nav_inner ul li{
+  box-sizing: border-box;
+  float: left;
+  height: 60px;
+  border-right: 1px solid #f1f2f2;
+
+  color: #f1f2f2;
+}
+.nav_inner ul li:nth-child(1){
+  padding-top: 13px;
+}
+.nav_inner ul li:nth-child(2), .nav_inner ul li:nth-child(3){
+  padding-top: 18px;
+  width: 270px;
+}
+.nav_inner h2{
+  display: inline-block;
+  margin-left: 36px;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+.nav_inner img{
+  margin-right: 26px;
+}
+
+/* 내용 - 전체박스 */
+#wrap{
+  width: 1320px;
+  margin: 50px auto;
+}
+
+/* 시즌 */
+#season{
+  width: 1320px;
+  height: 350px;
+  margin: 80px auto;
+}
+#season ul{
+  border: 1px solid #42444e;
+}
+#season h6{
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 700;
+}
+#season p{
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 400px;
+}
+.season1, .season2{
+  margin-left: 20px;
+}
+.season1 li:nth-child(2), .season2 li:nth-child(2){
+  padding: 10px 30px;
+}
+.season1:hover, .season2:hover{
+  color: #f1f2f2;
+  background-color: #005baa;
+}
+
+#b45{
+  margin: 100px 0 70px 0;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 공연일정 */
+#box{
+  width: 1320px;
+  /* height: 138px; */
+  margin: auto;
+} 
+.b_date{
+  width: 100%;
+  height: 65px;
+}
+.b_date li{
+  float: left;
+}
+.b_date > li:first-child{
+  width: 25%;
+  box-sizing: border-box;
+}
+.b_date > li:last-child{
+  width: 75%;
+  border: 1px solid #42444e;
+  
+  box-sizing: border-box;
+}
+
+
+#year{
+  height: 65px;
+}
+#year li{
+  padding: 0 10px;
+
+  box-sizing: border-box;
+}
+#year li:first-child{
+  margin-left: 250px;
+}
+#year a{
+  display: inline-block;
+  line-height: 65px;
+}
+#year h3{
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 65px;
+}
+
+
+.tabs:after { 
+  content:""; 
+  display:block; 
+  clear:both;
+}
+.tabs li {
+  float:left; 
+
+  text-align: center;
+
+  width:20%;
+  height: 65px;
+
+  border: 1px solid #42444e; 
+
+  box-sizing:border-box;
+}
+.tabs li a {
+  display: block; 
+  
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 65px;
+}
+.tabs li.on a { 
+  background: #42444e;
+  color: #f1f2f2; 
+} 
+
+
+.b_choose{
+  width: 100%;
+  
+  height: 65px;
+  line-height: 65px;
+
+  margin-top: 10px;
+}
+.b_choose li{
+  float: left;
+
+  padding: 0 20px;
+
+  border: 1px solid #42444e; 
+}
+.b_choose li:nth-child(1), .b_choose li:nth-child(2){
+  width: 25%;
+  box-sizing: border-box;
+}
+.b_choose li:nth-child(1), .b_choose li:nth-child(2) a{
+  display: inline-block;
+  padding-left: 20px;
+}
+.b_choose li:last-child{
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#genre_choose{
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  width: 80%;
+
+  font-weight: 600;
+
+  -webkit-appearance:none; /* 크롬 화살표 없애기 */
+  -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+  appearance:none /* 화살표 없애기 */
+}
+
+
+/* 박스 검색 */
+.search_box .input-holder_box .search-input_box {
+  width:80%;
+
+  box-sizing: border-box;
+
+  font-weight: 600;
+
+  border: 0;
+  outline:none;
+}
+.search_box .input-holder_box .search-icon_box {
+  width:65px;
+  height:65px;
+  
+  border:none;
+  outline:none;
+  background: #42444e00;
+  cursor: pointer;
+
+  float:right;
+}
+
+
+
+#box2{
+  width: 1320px;
+  height: 40px;
+  
+  margin: 30px auto;
+}
+.b_click li{
+  float: left;
+}
+.b_click li a{
+  display: block;
+  padding: 5px 20px;
+}
+
+.tabs2:after { 
+  content:""; 
+  display:block; 
+  clear:both;
+}
+.tabs2 li {
+  float:left; 
+
+  text-align: center;
+
+  box-sizing:border-box;
+}
+.tabs2 li a {
+  display: block; 
+  
+  font-weight: 400;
+  padding: 5px 20px;
+}
+.tabs2 li.on a { 
+  border: 1px solid #42444e;
+  border-radius: 30px;
+}
+#box2 span{
+  font-weight: 700;
+  line-height: 40px;
+}
+
+
+/* 포스터 */
+#box3{
+  width: 1320px;
+  margin: auto;
+}
+.poster li{
+  float: left;
+  border: 1px solid #42444e;
+  padding: 25px;
+  margin-bottom: 45px;
+
+  position: relative;
+  height: 500px;
+}
+.poster li:nth-child(4n-3), .poster li:nth-child(4n-2), .poster li:nth-child(4n-1){
+  margin-right: 40px;
+}
+.poster li h5{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+
+  margin-top: 10px;  
+}
+.poster li p{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 23px;
+
+  position: absolute;
+  bottom: 25px;
+}
+.poster li p:last-child{
+  right: 25px;
+}
+
+/* 포스터 호버시 */
+#p_bg{
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  text-align: center;
+  display: none;
+}
+#p_bg > a{
+  margin-top: 239px;
+  display: inline-block;
+  line-height: 72px;
+  text-align: center;
+
+  color: #f1f2f2;
+}
+#p_bg > a:nth-child(1){
+  margin-right: 25px;
+  width: 72px;
+  height: 72px;
+
+  border: 1px solid #005baa;
+  border-radius: 50%;
+}
+#p_bg > a:nth-child(1):hover{
+  background-color: #005baa;
+}
+#p_bg > a:nth-child(2){
+  width: 72px;
+  height: 72px;
+
+  border: 1px solid #f37021;
+  border-radius: 50%;
+}
+#p_bg > a:nth-child(2):hover{
+  background-color: #f37021;
+}
+.poster > li:hover > #p_bg{
+  display: block;
+  background-color: rgba(66,68,78,0.5);
+}
+
+
+/* 푸터 */
+ .footer{
+  background-color: #42444e;
+  font-size: 13px;
+  font-weight: 400;
+  height: 310px;
+ }
+ .footer_inner{
+  width: 1320px;
+  margin: auto;
+ }
+ .opa50, .opa50>a {
+  color: #f1f2f2;
+  opacity: 50%;
+ }
+ .f_1{
+  word-spacing: 33px;
+  padding: 22px 0 22px 0;
+ }
+ .f_logo{
+  display: inline-block;
+  margin: 22px 36px 31px 0;
+ }
+.f_2{
+  margin-top: 20px;
+  line-height: 30px;
+  display: inline-block;
+} 
+.f_3 > a{
+  padding-left: 35px;
+}
+.f_3{
+  float: right;
+  text-align: right;
+  color: #f1f2f2;
+  padding-top: 20px;
+  line-height: 40px;
+}
+
+ .right{  float: right; }
+ .left{  float: left; }
+
+ .clear{ clear: both;}
+
+.center{  text-align: center;}
